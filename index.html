@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>PHB Tempo | Clima e Previsão para Parnaíba - PI</title>
+    <meta name="description" content="Previsão do tempo simples e rápida para a cidade de Parnaíba, Piauí, com dados em tempo real da Open-Meteo." />
+    <meta property="og:title" content="PHB Tempo | Clima e Previsão para Parnaíba - PI" />
+    <meta property="og:description" content="Previsão do tempo simples e rápida para a cidade de Parnaíba, Piauí, com dados em tempo real da Open-Meteo." />
+    <meta property="og:type" content="website" />
+    <meta name="twitter:card" content="summary_large_image" />
+    <script>
+      (function() {
+        try {
+          var saved = localStorage.getItem('phb_tempo_theme_preference');
+          var prefersDark = window.matchMedia && window.matchMedia('(prefers-color-scheme: dark)').matches;
+          if (saved === 'dark' || (!saved && prefersDark)) {
+            document.documentElement.classList.add('dark');
+            document.body && document.body.classList.add('dark');
+          } else {
+            document.documentElement.classList.remove('dark');
+            document.body && document.body.classList.remove('dark');
+          }
+        } catch(e) {}
+      })();
+    </script>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="module" src="/src/main.tsx"></script>
+  </body>
+</html>
+

@@ -1,0 +1,8 @@
+{
+  "name": "PHB Tempo",
+  "description": "Previsão do tempo simples e rápida para a cidade de Parnaíba, Piauí, com dados em tempo real da Open-Meteo.",
+  "requestFramePermissions": [],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}
